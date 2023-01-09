@@ -1,4 +1,5 @@
-import React from "react";
+import { Link } from "react-router-dom";
+import CommentComp from "../components/CommentComp";
 import VideoCard from "../components/VideoCard";
 
 const WatchPage = () => {
@@ -13,32 +14,34 @@ const WatchPage = () => {
         />{" "}
         Like Comment Watch later icons
         {/*  */}
-        CommentComp
+        {/* <CommentComp /> */}
       </div>
       {/* Hide the videos when from large screen */}
-      <div className="">
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-        <VideoCard />
-      </div>
+      <Link to="/watch">
+        <div className="">
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+          <VideoCard />
+        </div>
+      </Link>
     </div>
   );
 };

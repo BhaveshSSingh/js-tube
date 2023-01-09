@@ -3,6 +3,7 @@
 @tailwind utilities;
 
 /* Scrollbar */
+
 body::-webkit-scrollbar {
   width: 0.5rem;
 }

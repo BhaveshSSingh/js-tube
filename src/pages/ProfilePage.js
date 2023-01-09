@@ -2,9 +2,9 @@ import { CgLogOut } from "react-icons/cg";
 
 const ProfilePage = () => {
   return (
-    <div className="p-24">
-      <div className="fixed top-0 left-0 w-screen h-screen  p-2">
-        <div className="z-10 absolute top-1/4 left-1/2 -translate-x-2/4 -translate-y-1/4 rounded-xl w-10/12 h-max p-2 xl:w-[700px] break-all border border-blue-200 shadow-md shadow-blue-200">
+    <div className=" h-full  flex justify-center items-center w-full pt-32">
+      <div className="  w-[60%] h-screen ">
+        <div className="   rounded-xl h-max p-2  break-all border border-blue-200 shadow-md shadow-blue-200">
           <div className="flex p-2 justify-between items-center border-b border-blue-300">
             <h1 className="">My Profile</h1>
           </div>
@@ -17,11 +17,13 @@ const ProfilePage = () => {
                 <p>Email: user@user.com</p>
 
                 <h1>
-                  Liked Videos : 100 <button>Link to liked page</button>
+                  Liked Videos : 100{" "}
+                  <button type="submit">Link to liked page</button>
                 </h1>
 
                 <p>
-                  Watch later: 30 videos <button>link to saved page</button>
+                  Watch later: 30 videos{" "}
+                  <button type="button"> link to saved page</button>
                 </p>
               </div>
             </div>
